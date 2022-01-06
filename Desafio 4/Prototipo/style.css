@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url(../Prototipo/img/rooxo.jpg);
+    background-repeat: no-repeat;
+    background-size: 2187px;
+    background-position: left;
+
+}
+
+
+.logoTipo {
+    width: 150px;
+}
+
+.menu-hamburguer {
+    display: none;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    bottom: 56px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 134px;
+}
+
+
+.item-menu {
+    margin-right: 135px;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    position: relative;
+    left: 185px;
+}
+
+h2 {
+    color: #9400D3;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    font-size: 93px;
+    right: 218px;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 17px;
+    top: 60px;
+}
+
+.texto {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 44px;
+    line-height: 29.5px;
+}
+
+#nome {
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #c0c0c0;
+    width: 393px;
+    height: 40px;
+    border-style: hidden;
+}
+
+#texto {
+    position: relative;
+    top: 4px;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #c0c0c0;
+    width: 393px;
+    height: 40px;
+    border-style: hidden;
+}
+
+#mensagem {
+    position: relative;
+    top: 17px;
+}
+
+textarea {
+    overflow: hidden;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #c0c0c0;
+    border-style: hidden;
+
+}
+
+.sign {
+    position: relative;
+    right: -596px;
+    border-radius: 12px 12px 12px 12px;
+    width: 133px;
+    height: 28px;
+    font-size: 19px;
+    font-family: arial;
+    border-color: #9400D3;
+    bottom: 26px;
+
+}
+
+#botao {
+    position: relative;
+    top: 50px;
+    left: 160px;
+}
+
+.user {
+    position: relative;
+    bottom: 28px;
+    right: 21px;
+
+}
+
+.bandeira {
+    position: relative;
+    right: 22px;
+    bottom: 163px;
+
+}
+
+.subJect {
+    position: relative;
+    bottom: 24px;
+    right: 25px;
+
+}
+
+input {
+    border-radius: 12px 12px 12px 12px;
+    width: 133px;
+    height: 28px;
+    font-size: 19px;
+    font-family: arial;
+    border-color: #9400D3;
+
+}
+
+::placeholder {
+    position: relative;
+    left: 50px;
+}
+
+/* versão mobile */
+@media screen and (max-width:769px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body, html {
+        background-image: none;
+        overflow-y: auto;
+    }
+
+    .logoTipo {
+        width: 100px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-top: 31px;
+        position: relative;
+        left: -4px;
+    }
+
+    .nav-bar {
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        bottom: 4px;
+        margin-right: -130px;
+
+
+    }
+
+    .sign {
+        margin-right: 100px;
+        position: relative;
+        bottom: 125px;
+        right: 40px;
+    }
+
+    .menu-hamburguer {
+        display: block;
+        margin-right: 30px;
+        font-size: 32px;
+        color: #9400D3;
+    }
+
+    main {
+        display: block;
+        margin-right: 233px;
+    }
+
+    h2 {
+        font-size: 51px;
+        left: 28px;
+
+    }
+
+    .formularios {
+        left: 35px;
+    }
+
+    #nome {
+        width:  317px;
+    }
+
+    #texto {
+        width:  317px;
+    }
+
+    #mensagem {
+        width: 336px;
+    }
+
+    textarea {
+        width: 319px;
+        height: 161px;
+    }
+
+    .texto {
+        left: 39px;
+        font-size: 12px;
+    }
+
+    #botao {
+        left: 94px;
+    }
+
+    .container_2 {
+        display: none;
+    }
+
+
+}

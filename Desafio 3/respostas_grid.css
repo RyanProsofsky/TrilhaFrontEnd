@@ -1,0 +1,71 @@
+
+h1{
+    text-align: center;
+    
+}
+h2{
+    font-size: 25px;
+
+}
+h3{
+    font-size: 25px;
+}
+h4{
+    font-size: 25px;
+}
+h5{
+    font-size: 25px;    
+}
+h6{
+    font-size: 25px;
+}
+
+
+
+p{
+    display: flex;
+    margin-top: -12px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.questãod{
+    display: flex;
+    margin-top: -29px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.questãoe{
+    display: flex;
+    margin-top: -37px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.questãof{
+    display: flex;
+    margin-top: -52px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    }
+
+.questãog{
+    display: flex;
+    margin-top: -52px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.questãoh{
+    display: flex;
+    margin-top: -52px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+    
+
+

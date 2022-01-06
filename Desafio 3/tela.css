@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.teste {
+    display: flex;
+
+}
+
+#menu {
+    display: none;
+
+}
+
+header {
+    background-color: #C0C0C0;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-top: 120px;
+}
+
+nav {
+    background-color: #0000CD;
+    color: #fff;
+    padding-top: 93px;
+    margin-top: 20px;
+}
+
+section {
+    width: 80%;
+    display: flex;
+    background-color: #C0C0C0;
+    flex-direction: column;
+    display: block;
+    margin-top: 20px;
+
+}
+
+article {
+    padding: 100px 50px;
+    align-items: center;
+    margin: 30px;
+    width: 84%;
+    background-color: #A9A9A9;
+    display: block;
+}
+
+aside {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 20%;
+    text-align: right;
+    background-color: #C0C0C0;
+    justify-content: flex-end;
+}
+
+footer {
+
+    background-color: #C0C0C0;
+    padding-bottom: 150px;
+    /* padding-top: 73px; */
+    margin-top: 20px;
+}
+.texto{
+    display: none;
+}
+
+/* mobile */
+
+@media screen and (max-width:768px) {
+    header {
+        padding: 50px;
+
+    }
+
+    nav {
+        display: none;
+    }
+
+    article {
+        background-color: #C0C0C0;
+        display: flex;
+
+    }
+
+    #menu {
+        background-color: blue;
+        list-style: none;
+        display: block;
+        margin-top: 9px;
+        padding: 50px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .menu-item {
+        text-decoration: none;
+        color: inherit;
+        margin-left: 20px;
+    }
+
+    footer {
+        padding-top: 1px;
+        margin-top: 160px;
+        padding: 40px;
+    }
+
+    article {
+        margin: 14px;
+        margin-left: -44px;
+        margin-right: 0px;
+        /* margin-top: 17px; */
+        padding-bottom: 0px;
+    }
+
+    .p {
+        opacity: 0;
+        text-align: auto;
+    }
+
+    .palavra {
+        position: relative;
+        bottom: 108px;
+        left: 20px;
+        flex: auto;
+
+    }
+
+    .texto {
+        flex: auto;
+        position: relative;
+        bottom: 15px;
+        right: 32px;
+        display: block;
+
+    }
+
+    section {
+        /* display: none; */
+        display: contents;
+    }
+}

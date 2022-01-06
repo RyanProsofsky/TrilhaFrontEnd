@@ -1,0 +1,162 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+@media screen and (max-width:2560px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 15vh 15vh 50vh 15vh;
+        grid-gap: 20px;
+    }
+
+    header {
+        background: #C0C0C0;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    nav {
+        background: #0000ff;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    section {
+        background: #C0C0C0;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    article {
+        padding-top: 11rem;
+        display: flex;
+        margin: 1rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        background: #A9A9A9;
+    }
+
+    aside {
+        background: #C0C0C0;
+        grid-column-start: 3;
+
+    }
+
+    footer {
+        background: #C0C0C0;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .art-titulo {
+        position: relative;
+        bottom: 165px;
+    }
+
+    h2 {
+        position: relative;
+        left: 1.1rem;
+    }
+
+    .teste {
+        position: relative;
+        bottom: 6rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+
+
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 20vh 20vh 60vh 40vh 20vh;
+    }
+
+    header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        list-style: none;
+        background: #0000ff;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0rem;
+        padding-top: 3rem;
+        color: white;
+    }
+
+    article {
+        background: #A9A9A9;
+        margin: 0px;
+        padding-bottom: 154px;
+    }
+
+    aside {
+        grid-column-start: 1;
+        grid-column-end: 4;
+
+    }
+
+    .sec-titulo {
+        display: none;
+    }
+
+    section {
+        background: inherit;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .art-titulo {
+        display: flex;
+        position: relative;
+        bottom: 100px;
+        left: 20px
+    }
+
+    .teste {
+        display: flex;
+        position: relative;
+        bottom: 16px;
+        right: 82px;
+    }
+
+    h2 {
+        display: flex;
+        position: relative;
+        left: 2rem;
+
+    }
+
+    h1 {
+        display: flex;
+        position: relative;
+        left: 2rem;
+    }
+}

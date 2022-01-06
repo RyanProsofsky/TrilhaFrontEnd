@@ -1,0 +1,216 @@
+body{
+    /* margin: 158px; */
+    margin: 16px;
+    padding: 192px;
+     
+} 
+    /* TABULEIRO FEITO COM DIV COMEÇA AQUI */
+
+.container{
+    margin-top: 100px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+#coluna1{
+    display: flex ;
+    align-content: flex-end;
+    justify-content: center;
+    text-align: center;
+
+}
+.quadrado1{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color:black;
+    color: #000;
+    background-color: #000;
+}
+.quadrado2{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color: #A9A9A9;
+    color: #A9A9A9;
+    background-color: #A9A9A9;
+}
+.quadrado3{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color:black;
+    color: #000;
+    background-color: #000;
+}
+.quadrado4{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color: #A9A9A9;
+    color: #A9A9A9;
+    background-color: #A9A9A9;
+}
+#coluna2{
+   
+    display: flex ;
+    align-content: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+.quadrado5{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color:#A9A9A9;
+    color: #A9A9A9;
+    background-color: #A9A9A9;;
+}
+.quadrado6{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color: #000;
+    color: #000;
+    background-color: #000;
+}
+.quadrado7{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color:#A9A9A9;
+    color: #A9A9A9;
+    background-color: #A9A9A9;
+}
+.quadrado8{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color: #000;
+    color: #000;
+    background-color: #000;
+}
+#coluna3{
+    display: flex ;
+    align-content: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+.quadrado9{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color:#000;
+    color: #000;
+    background-color: #000;
+}
+.quadrado10{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color: #A9A9A9;
+    color: #A9A9A9;
+    background-color: #A9A9A9;
+}
+.quadrado11{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color:#000;
+    color: #000;
+    background-color: #000;
+}
+.quadrado12{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color: #A9A9A9;
+    color: #A9A9A9;
+    background-color: #A9A9A9;
+}
+#coluna4{
+    display: flex ;
+    align-content: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+.quadrado13{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color:#A9A9A9;
+    color: #A9A9A9;
+    background-color: #A9A9A9;;
+}
+.quadrado14{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color: #000;
+    color: #000;
+    background-color: #000;
+}
+.quadrado15{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color:#A9A9A9;
+    color: #A9A9A9;
+    background-color: #A9A9A9;
+}
+.quadrado16{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color: #000;
+    color: #000;
+    background-color: #000;
+}
+        /* TABULEIRO COM DIV ACABA AQUI */
+
+        /* TABULEIRO FEITO COM TABLE COMEÇA AQUI */
+h2{
+    text-align: center;
+    font-size: 50px;
+}
+    
+
+table{
+    display: flex ;
+    align-content: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+.linha1{
+    width:50px;
+    height: 50px;
+    border: 25px solid; 
+    border-color: #000;
+    color: #000;
+    background-color: #000;
+}
+.linha2{
+    width: 50px;
+    height: 50px;
+    border: 25px solid;
+    border-color: #A9A9A9;
+    color: #A9A9A9;
+    background-color: #A9A9A9;
+}
+.linha3{
+    width: 50px;
+    height: 50px;
+    border: 25px solid;
+    border-color:#000;
+    color: #000;
+    background-color: #000;
+}
+.linha4{
+    width: 50px;
+    height: 50px;
+    border: 25px solid;
+    border-color: #A9A9A9;
+    color: #A9A9A9;
+    background-color: #A9A9A9;
+}
