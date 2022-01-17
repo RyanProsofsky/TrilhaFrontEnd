@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListaNumerosComponent } from './components/lista-numeros/lista-numeros.component';
+import { QuadradoComponent } from './components/quadrado/quadrado.component';
 
 const routes: Routes = [
 {
@@ -8,10 +9,13 @@ const routes: Routes = [
   component: ListaNumerosComponent
 },
 
+{ path: 'quadrado', 
+component: QuadradoComponent },
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
