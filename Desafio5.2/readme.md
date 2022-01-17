@@ -68,7 +68,7 @@ R: O styles serve para você estilizar especificamente algo do template.
                                       styleUrls: ['./component.component.css']                         
                                       })
 
-## ITEM 2
+## ITEM 2: ROTAS
 Sobre o funcionamento das rotas do Angular, responda:
 
 I. Qual é o comando no Angular CLI para criar uma nova aplicação com rotas?  
@@ -100,6 +100,35 @@ R:
 
 X. O que é Eager Load? Dê um exemplo da definição de uma rota em angular utilizando Eager Load.<br>
 R:
+
+
+## ITEM 3: PIPES
+
+I. Qual é a utilidade dos pipes em aplicações Angular?<br>
+R: Pipes funcionam como uma máscara na aplicação.
+
+II. Cite os 6 pipes que fazem parte do pacote inicial do Angular.<br>
+R:UpperCasePipe, LowerCasePipe, CurrencyPipe, Decimalpipe, PercentPipe.
+
+III. Descreva a funcionalidade de cada um dos pipes citados acima e dê um exemplo da sua utilização, juntamente com o resultado em tela.
+R:
+- DatePipe: formata um valor de data de acordo com as regras de localidade.<br>
+
+- UpperCasePipe: transforma o texto em letras maiúsculas.<br>
+
+- LowerCasePipe: transforma o texto em todas as letras minúsculas.<br>
+
+- CurrencyPipe: transforma um número em uma string de moeda, formatada de acordo com as regras de localidade.<br>
+
+- DecimalPipe: transforma um número em uma string com um ponto decimal, formatado de acordo com as regras de localidade.<br>
+
+- PercentPipe: transforma um número em uma string de porcentagem, formatada de acordo com as regras de localidade.<br>
+
+IV. O que são custom pipes?<br>
+R: 
+
+
+
 
 
 
