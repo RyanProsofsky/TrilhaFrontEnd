@@ -9,7 +9,11 @@ import { ComponenteFilhoComponent } from './components/componente-filho/componen
 import { ListaNumerosComponent } from './components/lista-numeros/lista-numeros.component';
 import { AppRoutingModule } from './app-routing.module';
 import { QuadradoComponent } from './components/quadrado/quadrado.component';
-import { CuboComponent } from './cubo/cubo.component';
+import { CuboComponent } from './components/cubo/cubo.component';
+import { TestesPipeComponent } from './components/testes-pipe/testes-pipe.component';
+import { CodigoConvitePipe } from './pipes/codigo-convite.pipe';
+import { CodigoCpfPipe } from './pipes/codigo-cpf.pipe';
+import { CodigoCnpjPipe } from './pipes/codigo-cnpj.pipe';
 
 
 
@@ -21,6 +25,10 @@ import { CuboComponent } from './cubo/cubo.component';
     ListaNumerosComponent,
     QuadradoComponent,
     CuboComponent,
+    TestesPipeComponent,
+    CodigoConvitePipe,
+    CodigoCpfPipe,
+    CodigoCnpjPipe,
     
   ],
   imports: [

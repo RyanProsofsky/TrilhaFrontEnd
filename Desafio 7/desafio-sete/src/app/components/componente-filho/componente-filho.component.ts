@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ComponentePaiComponent } from '../componente-pai/componente-pai.component';
 
 
@@ -9,6 +10,12 @@ import { ComponentePaiComponent } from '../componente-pai/componente-pai.compone
 })
 export class ComponenteFilhoComponent extends
 ComponentePaiComponent {
-  
-
+  constructor(private router: Router) {
+    super();
+  }
+  calculaCubo() {
+    this.router.navigate(['/cubo'], {
+      state: { valorRota: this.numeroComponent },
+    });
+  }
 }

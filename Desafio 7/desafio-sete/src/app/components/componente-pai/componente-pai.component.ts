@@ -31,9 +31,11 @@ export class ComponentePaiComponent {
     console.log('esta funcionando')
   }
 
-  aoCubo(x: number = 0) { 
-     for (let x = 0; x <= 5; x++) {
-     } 
+  // aoCubo(x: number = 0) { 
+  //    return Math.pow(x,3) 
+  //    } 
+    
+    
      
       
      
@@ -42,7 +44,6 @@ export class ComponentePaiComponent {
   
 
   }
-}
   // aoCubo(_valor: number): string {
   //   let n1
   //   let n2

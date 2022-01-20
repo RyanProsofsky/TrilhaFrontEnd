@@ -125,7 +125,7 @@ R:
 - PercentPipe: transforma um número em uma string de porcentagem, formatada de acordo com as regras de localidade.<br>
 
 IV. O que são custom pipes?<br>
-R: 
+R: são pipes que os próprios desenvolvedores criam, diante da necessidade
 
 
 
