@@ -9,6 +9,7 @@ import { ComponenteFilhoComponent } from './components/componente-filho/componen
 import { ListaNumerosComponent } from './components/lista-numeros/lista-numeros.component';
 import { AppRoutingModule } from './app-routing.module';
 import { QuadradoComponent } from './components/quadrado/quadrado.component';
+import { CuboComponent } from './cubo/cubo.component';
 
 
 
@@ -19,6 +20,7 @@ import { QuadradoComponent } from './components/quadrado/quadrado.component';
     ComponenteFilhoComponent,
     ListaNumerosComponent,
     QuadradoComponent,
+    CuboComponent,
     
   ],
   imports: [

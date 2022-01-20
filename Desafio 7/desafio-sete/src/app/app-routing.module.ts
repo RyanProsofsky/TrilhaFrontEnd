@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListaNumerosComponent } from './components/lista-numeros/lista-numeros.component';
 import { QuadradoComponent } from './components/quadrado/quadrado.component';
+import { CuboComponent } from './cubo/cubo.component';
 
 const routes: Routes = [
 {
@@ -9,10 +10,17 @@ const routes: Routes = [
   component: ListaNumerosComponent
 },
 
-{ path: 'quadrado', 
-component: QuadradoComponent },
+{
+   path: 'quadrado', 
+  component: QuadradoComponent },
+
+{
+  path: 'cubo',
+  component: CuboComponent },
 
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

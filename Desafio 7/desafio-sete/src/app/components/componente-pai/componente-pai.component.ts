@@ -24,13 +24,33 @@ export class ComponentePaiComponent {
       }
     }
     return primo ? "é primo" : "não é primo"
-  
+
   }
- 
+
+  teste() {
+    console.log('esta funcionando')
+  }
+
+  aoCubo(x: number = 0) { 
+     for (let x = 0; x <= 5; x++) {
+     } 
+     
+      
+     
 
 
-    // if (num % i === 0) {
-    // return valor % 2 === 1 ? " é primo" : " não é primo";
   
 
+  }
 }
+  // aoCubo(_valor: number): string {
+  //   let n1
+  //   let n2
+  //   let n3
+
+  //   function (numeroAoCubo)(n1: number ,n2: number ,n3: number){
+  //     if ( n1 * n2 * n3 ) {
+  //         return n1* n2 * n3
+  //     }
+  // }
+
