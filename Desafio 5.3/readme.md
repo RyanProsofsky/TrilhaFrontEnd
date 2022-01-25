@@ -35,7 +35,7 @@ R: Injeção de Dependência é um é um padrão de projeto usado para evitar o 
 
 II. Verdadeiro ou Falso. Injeção de Dependências pode ser apenas de services?
 Justifique sua escolha.<br>
-R: Não, 
+R:
 
 III. Verdadeiro ou Falso. O Angular quando vai instanciar uma classe de componente
 verifica se as injeções de dependência já não estão sendo usadas?
@@ -89,11 +89,11 @@ R:
 VIII. Cite os tipos de retorno que uma requisição HTTP pode ter? Faça um breve resumo
 de cada.<br>
 R:
-- Respostas de informação ( 100 - 199 ).
-- Respostas de sucesso ( 200 - 299 ).
-- Redirecionamentos ( 300 - 399 ).
-- Erros do cliente ( 400 - 499 ).
-- Erros do servidor ( 500 - 599 ).
+- GET: indica que um recurso será recuperado do servidor. Por exemplo, quando você solicita uma página pelo seu browser.
+- POST: indica que um recurso será inserido ou cirado no servidor. Um upload de um novo arquivo.
+- PUT: indica que um recurso será atualizado no servidor. Seria equivalente a um update em uma base de dados.
+- DELETE: indica que um recurso será removido. Seria o equivalente a um delete em uma base de dados.
+
 
 
 IX. Cite os principais status de uma requisição HTTP e faça um breve resumo de cada.<br>
@@ -105,6 +105,20 @@ R:
 
 X. Faça um exemplo de chamadas do tipo GET, POST, PUT, DELETE.<br>
 R:
+- GET
+<img src="../Desafio 5.3/imagem/metodoGet.img">
+
+- POST
+<img src="../Desafio 5.3/imagem/metodoPost.img">
+
+- PUT
+<img src="../Desafio 5.3/imagem/metodoPut.img">
+
+- DELETE
+<img src="../Desafio 5.3/imagem/metodoDelete.img">
+
+
+
 
 XI. Para que serve o cabeçalho em uma requisição HTTP?<br>
 R: Os cabeçalhos HTTP permitem que o cliente e o servidor passem informações adicionias com a solicitação ou a resposta HTTP.
@@ -195,13 +209,27 @@ R:
 IX. Ainda dentro de operadores de criação, explique melhor e dê um exemplo para os
 seguintes operadores:<br>
 
-- ajax;
-- from;
-- fromEvent;
-- generate;
-- of;
-- interval;
-- throwError;
+- ajax
+
+- from
+<img src="../Desafio 5.3/imagem/from.img">
+
+- fromEvent
+<img src="../Desafio 5.3/imagem/fromEvent.img">
+
+
+- generate
+<img src="../Desafio 5.3/imagem/generate.img">
+
+
+- of
+<img src="../Desafio 5.3/imagem/of.img">
+
+- interval
+<img src="../Desafio 5.3/imagem/interval.img">
+
+- throwError
+
 - timer
 
 X. Quais os operadores de criação de associação?<br>
@@ -210,9 +238,11 @@ R: combineLatest, concat, forkJoin, merge, partition, race, zip.
 XI. Ainda dentro de operadores de criação de associação, explique melhor e dê um
 exemplo para os seguintes operadores:<br>
 
-- concat;
-- forkJoin;
-- merge
+- concat: Esse operador deve ser utilizado quando a ordem for importante, por exemplo, quando você precisa enviar requisições HTTP que o resultado deve ser exibido em ordem.
+
+- forkJoin:
+
+- merge:
 
 XII. Quais os operadores de transformação?<br>
 R: 
@@ -248,10 +278,17 @@ R:
 XIII. Ainda dentro de operadores de transformação, explique melhor e dê um exemplo
 para os seguintes operadores:<br>
 
-- concatMap;
-- map;
-- mapTo;
-- mergeMap;
-- mergeMapTo;
-- switchMap;
-- switchMapTo
+- concatMap
+<img src="../Desafio 5.3/imagem/concatMap.img">
+
+- map:
+
+- mapTo:
+
+- mergeMap:
+
+- mergeMapTo:
+
+- switchMap:
+
+- switchMapTo:
