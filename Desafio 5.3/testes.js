@@ -1,6 +1,5 @@
-
-of(1, 2, 3, 4, 5, 6).pipe(mapTo('request')).subscribe(console.log);
-
-of(1, 2, 3, 4, 5, 6)
-    .pipe(map((v) => v + 10))
-    .subscribe(console.log);
+const ons$ = timer(5000, 1000);
+ons$.subscribe((d) => {
+    console.log(d);
+    this.data = d;
+})

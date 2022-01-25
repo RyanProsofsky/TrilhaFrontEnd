@@ -4,20 +4,20 @@ I. Qual o propósito de services no angular?<br>
 R: O propósito de services no angular é organizar e compartilhar lógica de negócios, modelos ou dados e funções com diferentes componentes.
 
 II. Porque no Angular há uma distinção entre components e services?<br>
-R:  Os componentes definem visualizações, que são conjuntos de elementos de tela que o Angular pode escolher e modificar de acordo com a lógica e os dados do seu programa. Os componentes usam serviços , que fornecem funcionalidades específicas não relacionadas diretamente às visualizações.
+R: Os componentes definem visualizações, que são conjuntos de elementos de tela que o Angular pode escolher e modificar de acordo com a lógica e os dados do seu programa. Os componentes usam serviços , que fornecem funcionalidades específicas não relacionadas diretamente às visualizações.
 
 III. Como as services são disponibilizadas em um component?<br>
-R:  
+R: Temos que importar ele no imports, podemos criar uma variável chamando esse arquivo do service para conseguir utilizalo.
 
 VI. Que tipo de tarefas uma service pode ter?<br>
-R:  
+R: Copiam arquivos e diretórios; baixam arquivos e dados; executam métodos da Web; aplicam operações a documentos XML; e criam perfis de dados para limpeza
 
 V. Verdadeiro ou Falso. Uma service precisa obrigatoriamente estar em pelo menos um módulo? Justifique sua escolha<br>
-R:
+R: Falso, ele precisa ao menos estar em um arquivo .ts
 
 
 VI. Verdadeiro ou Falso. Uma service é do tipo de padrão de projeto Singleton? Justifique sua escolha<br>
-R:
+R: verdadeiro, pois ele não pode ser reutilizado 
 
 
 VII. Escreva uma service que deverá ter os seguintes métodos e em cada um deverá
@@ -31,7 +31,7 @@ escrever uma implementação básica (pode ser usado Arrays):
 b) A respeito de services, responda: 
 
 I. O que é Injeção de Dependências?<br>
-R: Injeção de Dependência é um é um padrão de projeto usado para evitar o alto nível de acoplamento de código dentro de uma aplicação
+R: é um padrão de design no qual uma classe solicita dependências de fontes externas, em vez de ter que criá-los
 
 II. Verdadeiro ou Falso. Injeção de Dependências pode ser apenas de services?
 Justifique sua escolha.<br>
@@ -63,7 +63,7 @@ VI. Para usar o HttpClient no Angular, como devemos fazer sua importação e inj
 R: Precisamos importar o módulo HttpClientModule no módulo em que se encontra declarado o componente/serviço em que vamos realizar as requisições.
 
 V. Verdadeiro ou Falso. O HttpClient pode ser usado com RxJS? Justifique sua escolha.<br>
-R:
+R:  Verdadeiro, 
 
 VI. Cite os principais métodos HTTP e faça um breve resumo de cada.<br>
 R: 
@@ -145,7 +145,7 @@ R:
 
 ## Observables:
 
-- Emite vários valores duante um período de tempo. 
+- Emite vários valores durante um período de tempo. 
 - Eles não são executados até que subscrevamos usando o método subscribe(). 
 - Ter assinaturas que podem ser canceladas usando o método unsubscribe(), que impede o ouvinte de receber valores adicionais.
 - Forneça o mapa para os operadores forEach, filter, reduce, retry e retryWhen.
@@ -209,12 +209,13 @@ R:
 IX. Ainda dentro de operadores de criação, explique melhor e dê um exemplo para os
 seguintes operadores:<br>
 
-- ajax
+- ajax: Ele é usado para solicitar dados do servidor sem atualização de página inteira e usar o resultado, que originalmente era XML, para renderizar novamente uma parte da página.
+<img src="../Desafio 5.3/imagem/ajax.img">
 
-- from
+- from: 
 <img src="../Desafio 5.3/imagem/from.img">
 
-- fromEvent
+- fromEvent: É um método fornecido por RxJs para criar Observable.
 <img src="../Desafio 5.3/imagem/fromEvent.img">
 
 
@@ -222,15 +223,18 @@ seguintes operadores:<br>
 <img src="../Desafio 5.3/imagem/generate.img">
 
 
-- of
+- of: O operador criará um Observable que emite uma quantidade variável de valores em sequência, seguido por uma notificação de conclusão.
 <img src="../Desafio 5.3/imagem/of.img">
 
-- interval
+- interval: Usado para criar um observável que emite uma sequência de inteiros toda vez para um determinado intervalo de tempo
 <img src="../Desafio 5.3/imagem/interval.img">
 
-- throwError
+- throwError: Cria um observable que emite uma notificação de erro
+<img src="../Desafio 5.3/imagem/throwError.img">
 
-- timer
+
+- timer: Usado para criar um observável que começa a emitir os valores após o timeout , e o valor continuará aumentando após cada chamada.
+<img src="../Desafio 5.3/imagem/timer.img">
 
 X. Quais os operadores de criação de associação?<br>
 R: combineLatest, concat, forkJoin, merge, partition, race, zip.
@@ -240,7 +244,7 @@ exemplo para os seguintes operadores:<br>
 
 - concat: Esse operador deve ser utilizado quando a ordem for importante, por exemplo, quando você precisa enviar requisições HTTP que o resultado deve ser exibido em ordem.
 
-- forkJoin:
+- forkJoin: Recebe qualquer número de observáveis de entrada que podem ser passados como um array ou um dicionário de observáveis de entrada . ... forkJoin aguardará a emissão e conclusão de todos os observáveis passados e, em seguida, emitirá um array ou um objeto com os últimos valores dos observáveis correspondentes.
 
 - merge:
 
@@ -278,17 +282,23 @@ R:
 XIII. Ainda dentro de operadores de transformação, explique melhor e dê um exemplo
 para os seguintes operadores:<br>
 
-- concatMap
+- concatMap: Projeta cada valor emitido pela fonte para um Observable interno que se liga ao Observable resultante sequencialmente, esperando que cada Observable interno seja concluído antes de vincular o próximo
 <img src="../Desafio 5.3/imagem/concatMap.img">
 
-- map:
+- map: Permite que nós manipulamos os valores do retorno do Observable.
+<img src="../Desafio 5.3/imagem/map.img">
 
-- mapTo:
+- mapTo: recebe uma fonte observável como entrada . Ele aplica uma função de projeto a cada um dos valores emitidos pela fonte observável e o transforma em um novo valor.
+<img src="../Desafio 5.3/imagem/mapTo.img">
 
-- mergeMap:
+- mergeMap: Mapeia cada valor do observável de origem em um observável interno, se inscreve nele e, em seguida, começa a emitir os valores dele substituindo o valor original. Ele cria um novo observável interno para cada valor que recebe da Fonte.
+<img src="../Desafio 5.3/imagem/mergeMap.jpeg">
 
-- mergeMapTo:
+- mergeMapTo:É como mergeMap, mas mapeia cada valor sempre para o mesmo Observable interno.
+<img src="../Desafio 5.3/imagem/mergeMap.jpeg">
 
-- switchMap:
+- switchMap: Ele basicamente projeta cada valor de origem para um observável que é então mesclado no observável de saída, emitindo valores apenas do observável projetado mais recentemente.
+<img src="../Desafio 5.3/imagem/switchMap.img">
 
-- switchMapTo:
+- switchMapTo
+<img src="../Desafio 5.3/imagem/switchMapTo.jpeg">
