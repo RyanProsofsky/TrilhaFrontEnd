@@ -7,17 +7,17 @@ II. Porque no Angular há uma distinção entre components e services?<br>
 R: Os componentes definem visualizações, que são conjuntos de elementos de tela que o Angular pode escolher e modificar de acordo com a lógica e os dados do seu programa. Os componentes usam serviços , que fornecem funcionalidades específicas não relacionadas diretamente às visualizações.
 
 III. Como as services são disponibilizadas em um component?<br>
-R: Temos que importar ele no imports, podemos criar uma variável chamando esse arquivo do service para conseguir utilizalo.
+R: Temos que importar ele no imports, podemos criar uma variável chamando esse arquivo do service para conseguir utiliza-lo.
 
 VI. Que tipo de tarefas uma service pode ter?<br>
 R: Copiam arquivos e diretórios; baixam arquivos e dados; executam métodos da Web; aplicam operações a documentos XML; e criam perfis de dados para limpeza
 
 V. Verdadeiro ou Falso. Uma service precisa obrigatoriamente estar em pelo menos um módulo? Justifique sua escolha<br>
-R: Falso, ele precisa ao menos estar em um arquivo .ts
+R: verdadeiro, ele precisa ao menos estar em um arquivo, para dessa forma conseguir criar a função desse service.
 
 
 VI. Verdadeiro ou Falso. Uma service é do tipo de padrão de projeto Singleton? Justifique sua escolha<br>
-R: verdadeiro, pois ele não pode ser reutilizado 
+R: falso, pois ele pode ser reutilizado em outros components. 
 
 
 VII. Escreva uma service que deverá ter os seguintes métodos e em cada um deverá
@@ -35,12 +35,12 @@ R: é um padrão de design no qual uma classe solicita dependências de fontes e
 
 II. Verdadeiro ou Falso. Injeção de Dependências pode ser apenas de services?
 Justifique sua escolha.<br>
-R:
+R: verdadeiro, por que o service é uma maneira de deixar a aplicação mais organizada. 
 
 III. Verdadeiro ou Falso. O Angular quando vai instanciar uma classe de componente
 verifica se as injeções de dependência já não estão sendo usadas?
 Justifique sua escolha.<br>
-R:
+R: verdadeiro,  
 
 c) HTTP Client:
 
@@ -49,6 +49,13 @@ R: É um protocolo de transferência que possibilita que as pessoas que inserem 
 
 II. Cite outros tipos de comunicação com o backend e faça um breve resumo de cada.<br>
 R:   
+
+- FTP: Protocolo de transferência de arquivos.
+- SMTP: Protocolo de Transferência de Correio Simples.
+- TFTP: Protocolo de transferência de arquivos triviais.
+- SFTP: FTP simples.
+- NNTP: Protocolo de Transferência de Notícias da Rede.
+
 
 III. Que recursos o HTTP nos fornece?<br>
 R:  
@@ -63,7 +70,7 @@ VI. Para usar o HttpClient no Angular, como devemos fazer sua importação e inj
 R: Precisamos importar o módulo HttpClientModule no módulo em que se encontra declarado o componente/serviço em que vamos realizar as requisições.
 
 V. Verdadeiro ou Falso. O HttpClient pode ser usado com RxJS? Justifique sua escolha.<br>
-R:  Verdadeiro, 
+R:  Verdadeiro, o httpClient ele serve pra enviar solicitações e recuperar as respostas e o RxJS é uma biblioteca de construção de eventos.
 
 VI. Cite os principais métodos HTTP e faça um breve resumo de cada.<br>
 R: 
@@ -84,7 +91,7 @@ R:
 
 VII. Verdadeiro ou Falso. Com o protocolo HTTP é possível dizer/setar o tipo de
 resposta do servidor backend? Justifique sua escolha.<br>
-R:  
+R: verdadeiro, podemos enviar uma mensagem falando se deu certo ou errado.
 
 VIII. Cite os tipos de retorno que uma requisição HTTP pode ter? Faça um breve resumo
 de cada.<br>
@@ -121,10 +128,10 @@ R:
 
 
 XI. Para que serve o cabeçalho em uma requisição HTTP?<br>
-R: Os cabeçalhos HTTP permitem que o cliente e o servidor passem informações adicionias com a solicitação ou a resposta HTTP.
+R: Os cabeçalhos HTTP permitem que o cliente e o servidor passem informações adicionais com a solicitação ou a resposta HTTP.
 
 XII. O que é um Interceptor e quais as suas aplicações?<br>
-R: Um interceptor é um pattern simplres que nos permite interceptar, tratar e gerenciar requisições HTTP, antes mesmo delas serem enviadas ao servidor 
+R: Um interceptor é um pattern simples que nos permite interceptar, tratar e gerenciar requisições HTTP, antes mesmo delas serem enviadas ao servidor 
 
 XIII. Quais cenários mais comuns podemos usar Interceptors?<br>
 R:  
@@ -175,16 +182,18 @@ VII. Quais os conceitos básicos do RxJS para eventos assíncronos? Descreva tod
 dê um exemplo de como utilizá-lo.<br>
 R: 
 - Observable: Representa a ideia de uma coleção invocável de valores ou eventos futuros.
+<img src="../Desafio 5.3/imagem/subject.img">
 
 - Observer: É uma coleção de callbacks que sabe escutar os valores entregues pelo Observable
-.
-- Subscription: Representa a execução de um Observável, é útil principalmente para cancelar a execução.
+<img src="../Desafio 5.3/imagem/observer.img">
 
-- Operators: são funções puras que permitem um estilo de programação funcional de lidar com coleções com operações como map, filter, concat, flatMap, etc.
+- Subscription: Representa a execução de um Observável, é útil principalmente para cancelar a execução.
+<img src="../Desafio 5.3/imagem/subscription.img">
 
 - Subject: É o equivalente a um EventEmitter e a única maneira de multicast de um valor ou evento para vários observadores.
+<img src="../Desafio 5.3/imagem/subject.img">
 
-- Schedulers: São despachantes centralizados para controlar a simultaneidade, permitindo-nos coordenar quando a computação acontece em, por exemplo, setTimeoutou requestAnimationFrameoutros.
+- Schedulers: São despachantes centralizados para controlar a simultanidade, permitindo-nos coordenar quando a computação acontece em, por exemplo, setTimeout ou requestAnimationFrame.
 
 
 VIII. Quais são os operadores de criação?<br>
@@ -243,10 +252,13 @@ XI. Ainda dentro de operadores de criação de associação, explique melhor e d
 exemplo para os seguintes operadores:<br>
 
 - concat: Esse operador deve ser utilizado quando a ordem for importante, por exemplo, quando você precisa enviar requisições HTTP que o resultado deve ser exibido em ordem.
+<img src="../Desafio 5.3/imagem/concat.img">
 
 - forkJoin: Recebe qualquer número de observáveis de entrada que podem ser passados como um array ou um dicionário de observáveis de entrada . ... forkJoin aguardará a emissão e conclusão de todos os observáveis passados e, em seguida, emitirá um array ou um objeto com os últimos valores dos observáveis correspondentes.
+<img src="../Desafio 5.3/imagem/forkJoin.img">
 
-- merge:
+- merge: usado para transformar vários observáveis em um único observável . Ele cria um Observável de saída, que emite simultaneamente todos os valores de cada Observável de entrada.
+<img src="../Desafio 5.3/imagem/merge.img">
 
 XII. Quais os operadores de transformação?<br>
 R: 
@@ -300,5 +312,5 @@ para os seguintes operadores:<br>
 - switchMap: Ele basicamente projeta cada valor de origem para um observável que é então mesclado no observável de saída, emitindo valores apenas do observável projetado mais recentemente.
 <img src="../Desafio 5.3/imagem/switchMap.img">
 
-- switchMapTo
+- switchMapTo:
 <img src="../Desafio 5.3/imagem/switchMapTo.jpeg">
