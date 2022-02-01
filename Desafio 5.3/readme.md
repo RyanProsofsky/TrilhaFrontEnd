@@ -28,6 +28,8 @@ escrever uma implementação básica (pode ser usado Arrays):
 - setUsers(users: any): <any> { }
 - deleteUser(userId: number): <any> { }
 
+<img src="../Desafio 5.3/imagem/c584ea0c-0daa-4d5b-ad19-9c0becab266e.jpg">
+
 b) A respeito de services, responda: 
 
 I. O que é Injeção de Dependências?<br>
@@ -50,11 +52,11 @@ R: É um protocolo de transferência que possibilita que as pessoas que inserem 
 II. Cite outros tipos de comunicação com o backend e faça um breve resumo de cada.<br>
 R:   
 
-- FTP: Protocolo de transferência de arquivos.
-- SMTP: Protocolo de Transferência de Correio Simples.
-- TFTP: Protocolo de transferência de arquivos triviais.
-- SFTP: FTP simples.
-- NNTP: Protocolo de Transferência de Notícias da Rede.
+- FTP: Protocolo de transferência de arquivos. 
+- SMTP: Protocolo de Transferência de Correio Simples.  
+- TFTP: Protocolo de transferência de arquivos triviais.  
+- SFTP: FTP simples. 
+- NNTP: Protocolo de Transferência de Notícias da Rede. 
 
 
 III. Que recursos o HTTP nos fornece?<br>
@@ -97,7 +99,7 @@ VIII. Cite os tipos de retorno que uma requisição HTTP pode ter? Faça um brev
 de cada.<br>
 R:
 - GET: indica que um recurso será recuperado do servidor. Por exemplo, quando você solicita uma página pelo seu browser.
-- POST: indica que um recurso será inserido ou cirado no servidor. Um upload de um novo arquivo.
+- POST: indica que um recurso será inserido ou criado no servidor. Um upload de um novo arquivo.
 - PUT: indica que um recurso será atualizado no servidor. Seria equivalente a um update em uma base de dados.
 - DELETE: indica que um recurso será removido. Seria o equivalente a um delete em uma base de dados.
 
@@ -228,7 +230,7 @@ seguintes operadores:<br>
 <img src="../Desafio 5.3/imagem/fromEvent.img">
 
 
-- generate
+- generate: '
 <img src="../Desafio 5.3/imagem/generate.img">
 
 
