@@ -223,14 +223,14 @@ seguintes operadores:<br>
 - ajax: Ele é usado para solicitar dados do servidor sem atualização de página inteira e usar o resultado, que originalmente era XML, para renderizar novamente uma parte da página.
 <img src="../Desafio 5.3/imagem/ajax.img">
 
-- from: 
+- from: from é usado para transformar dados que podem ser iterados em um observável .
 <img src="../Desafio 5.3/imagem/from.img">
 
 - fromEvent: É um método fornecido por RxJs para criar Observable.
 <img src="../Desafio 5.3/imagem/fromEvent.img">
 
 
-- generate: '
+- generate: uma sequência observável executando um loop controlado por estado produzindo os elementos da sequência
 <img src="../Desafio 5.3/imagem/generate.img">
 
 
@@ -242,7 +242,6 @@ seguintes operadores:<br>
 
 - throwError: Cria um observable que emite uma notificação de erro
 <img src="../Desafio 5.3/imagem/throwError.img">
-
 
 - timer: Usado para criar um observável que começa a emitir os valores após o timeout , e o valor continuará aumentando após cada chamada.
 <img src="../Desafio 5.3/imagem/timer.img">
@@ -314,5 +313,5 @@ para os seguintes operadores:<br>
 - switchMap: Ele basicamente projeta cada valor de origem para um observável que é então mesclado no observável de saída, emitindo valores apenas do observável projetado mais recentemente.
 <img src="../Desafio 5.3/imagem/switchMap.img">
 
-- switchMapTo:
+- switchMapTo: Mapeia cada valor de origem para o Observable internalObservable fornecido, independentemente do valor de origem e, em seguida, nivela os Observables resultantes em um único Observable, que é o Observable de saída
 <img src="../Desafio 5.3/imagem/switchMapTo.jpeg">
