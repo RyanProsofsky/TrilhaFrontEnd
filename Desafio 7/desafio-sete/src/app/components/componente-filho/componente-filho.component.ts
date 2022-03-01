@@ -8,8 +8,7 @@ import { ComponentePaiComponent } from '../componente-pai/componente-pai.compone
   templateUrl: './componente-filho.component.html',
   styleUrls: ['./componente-filho.component.css']
 })
-export class ComponenteFilhoComponent extends
-ComponentePaiComponent {
+export class ComponenteFilhoComponent extends ComponentePaiComponent {
   constructor(private router: Router) {
     super();
   }

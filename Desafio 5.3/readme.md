@@ -17,7 +17,7 @@ R: verdadeiro, ele precisa ao menos estar em um arquivo, para dessa forma conseg
 
 
 VI. Verdadeiro ou Falso. Uma service é do tipo de padrão de projeto Singleton? Justifique sua escolha<br>
-R: falso, pois ele pode ser reutilizado em outros components. 
+R: verdadeiro, por que ele é instanciado apenas uma vez e pode ser utilizado por vários components e services. 
 
 
 VII. Escreva uma service que deverá ter os seguintes métodos e em cada um deverá

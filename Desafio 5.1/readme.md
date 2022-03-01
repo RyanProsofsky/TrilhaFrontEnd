@@ -1,5 +1,5 @@
 ## a) Explique de forma sucinta a diferença entre SPA e MPA.
-R: O SPA apresenta o conteúdo em uma unica página, Já o MPA, as informações são carregadas de algum lugar.
+R: O SPA apresenta o conteúdo em uma unica página, Já o MPA, ele carrega a página toda antes de ir pro próximo.
 
 ## b) Como eram as páginas WEB na década de 90 e 1º década dos anos 2000?
 R: As páginas web nos anos 90, continham pouca estilização de forma geral, e os conteudos eram muito bagunçados, Já nos anos 2000, eram um pouco mais estilizados e com os conteúdos mais agrupados e organizados, mas ainda com 0 estilização em links.
@@ -44,7 +44,7 @@ R: Ele permite você alterar dinamicamente algum elemento da sua página.
 II. Quais os benefícios de se ter interpolação em uma aplicação Angular?<br>
 - Avalia todas as expressões entre chaves duplas.
 - Converte os resultados da expressão em strings. 
-- Vincula os resultados a strigns literais adjacentes.
+- Vincula os resultados a strings literais adjacentes.
 - Atribui o composto a um elemento ou propriedade de diretiva. 
 
 III. Crie uma interpolação com o seu nome, com nome do seu guia, data do desafio e a sua turma do desafio.<br>

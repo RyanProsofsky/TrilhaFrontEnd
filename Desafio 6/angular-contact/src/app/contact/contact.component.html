@@ -1,0 +1,53 @@
+<div class="container">
+    <main>
+        <aside>
+            <h2>CONTACT US</h2>
+            <div class="texto">
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+                    nam laborum beatae quae maxime sequi enim obcaecati id.<br>
+                    Labore vitae reiciendis et nam quidem inventore distinctio.</p>
+            </div>
+
+            <form class="formularios" [formGroup]="formulario">
+                <div id="nome">
+                    <input class="teste1" type="text" placeholder="Your Name" formControlName="nome">
+                    <span class="testeSpan1"
+                        *ngIf="formulario.get('nome')?.errors?.['required'] && formulario.get('nome')?.touched">
+                        Campo Obrigatório
+                    </span>
+                </div>
+                <figure class="user">
+                    <i class="far fa-user"></i>
+                </figure>
+
+                <div id="texto">
+                    <input class="teste2" type="text" placeholder="Your Subject" formControlName="mensagem">
+                    <span class="testeSpan2"
+                        *ngIf="formulario.get('mensagem')?.errors?.['required'] && formulario.get('mensagem')?.touched">
+                        Campo obrigatório
+                    </span>
+                </div>
+                <figure class=" subJect">
+                    <i class="fas fa-inbox"></i>
+                </figure>
+
+                <div id="mensagem">
+                    <textarea class="teste3" rows="10" cols="50" placeholder="Your Message"
+                        formControlName="texto"></textarea>
+                    <span class="testeSpan3"
+                        *ngIf="formulario.get('texto')?.errors?.['required'] && formulario.get('texto')?.touched">
+                        Campo obrigatório
+                    </span>
+                    <figure class=" bandeira">
+                        <i class="far fa-flag"></i>
+                    </figure>
+                </div>
+
+                <div id="botao">
+                    <input class="chat" type="submit" value="START CHAT" [disabled]="!formulario.valid"
+                        (click)="postar()">
+                </div>
+            </form>
+        </aside>
+    </main>
+</div>

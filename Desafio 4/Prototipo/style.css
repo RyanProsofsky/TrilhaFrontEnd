@@ -5,7 +5,7 @@
 
 body {
     overflow-x: hidden;
-    background-image: url(../Prototipo/img/rooxo.jpg);
+    background-image: url(./img/rooxo.jpg);
     background-repeat: no-repeat;
     background-size: 2187px;
     background-position: left;
@@ -272,3 +272,4 @@ input {
 
 
 }
+

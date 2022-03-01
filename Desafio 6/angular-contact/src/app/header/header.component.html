@@ -1,0 +1,20 @@
+<header>
+    <figure>
+        <img class="logoTipo" src="../assets/imagens/MicrosoftTeams-image.png" alt="Logo SóVamu">
+    </figure>
+
+    <figure class="menu-hamburguer" (click)="toggle=!toggle" >    
+        <i class="fas fa-bars" ></i>
+    </figure>
+</header>
+
+<nav class="nav-bar">
+    <div class="container-2">
+        <ul class="menu" *ngIf="toggle || innerWidth > 770 " >
+            <li><a class="item-menu" href="#">Home</a></li>
+            <li><a class="item-menu" href="#">Profile</a></li>
+            <li><a class="item-menu" href="#">About</a></li>
+            <li><a class="item-menu" href="#">Contact</a></li>
+        </ul>
+        <button class="sign" type="submit">Sign in </button>
+    </div>

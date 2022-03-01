@@ -1,0 +1,100 @@
+.logoTipo {
+    width: 150px;
+}
+
+.menu-hamburguer {
+    display: none;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    bottom: 73px;
+    left: 33px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 134px;
+  
+}
+
+.item-menu {
+    margin-right: 135px;
+    text-decoration: none;
+    color: black;
+}
+
+.sign {
+    position: relative;
+    right: -596px;
+    border-radius: 12px 12px 12px 12px;
+    width: 133px;
+    height: 28px;
+    font-size: 19px;
+    font-family: arial;
+    border-color: #9400D3;
+    bottom: 26px;
+
+}
+
+/* VERSÃO MOBILE */
+
+@media screen and (max-width:769px) {
+    .logoTipo {
+        width: 100px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .menu {
+        flex-direction: column;
+        margin-top: 31px;
+        position: relative;
+        left: -4px;
+    }
+
+    .nav-bar {
+        position: relative;
+        justify-content: flex-end;
+        bottom: 4px;
+        margin-right: -105px;
+    }
+
+    .sign {
+        margin-right: 100px;
+        position: relative;
+        bottom: 125px;
+        right: 40px;
+    }
+
+    .menu-hamburguer {
+        display: block;
+        margin-right: 15px;
+        font-size: 32px;
+        color: #9400D3;
+    }
+
+    main {
+        display: block;
+        margin-right: 233px;
+    }
+
+
+
+}

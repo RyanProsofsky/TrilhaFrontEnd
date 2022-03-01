@@ -1,0 +1,234 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 116px;
+    position: relative;
+    left: 196px;
+}
+
+h2 {
+    color: #9400D3;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    font-size: 93px;
+    right: 210px;
+    bottom: 162px;
+}
+
+.teste1 {
+    border-radius: 12px 12px 12px 12px;
+    width: 386px;
+    height: 33px;
+    font-size: 19px;
+    font-family: arial;
+    color: inherit;
+    border-style: hidden;
+    outline: none;
+}
+
+.teste2 {
+    outline: none;
+    border-radius: 12px 12px 12px 12px;
+    width: 386px;
+    height: 33px;
+    font-size: 19px;
+    font-family: arial;
+    color: inherit;
+    border-style: hidden;
+    outline: none;
+}
+
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 17px;
+    bottom: 130px;
+}
+
+.texto {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 44px;
+    line-height: 29.5px;
+    bottom: 170px;
+}
+
+
+#nome {
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #c0c0c0;
+    width: 393px;
+    height: 40px;
+    border-style: hidden;
+}
+
+#texto {
+    position: relative;
+    top: 4px;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #c0c0c0;
+    width: 393px;
+    height: 40px;
+    border-style: hidden;
+}
+
+#mensagem {
+    position: relative;
+    top: 17px;
+}
+
+textarea {
+    overflow: hidden;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #c0c0c0;
+    border-style: hidden;
+
+}
+
+#botao {
+    position: relative;
+    top: 50px;
+    left: 120px;
+}
+
+.chat {
+    border-radius: 12px 12px 12px 12px;
+    width: 147px;
+    height: 33px;
+    font-size: 19px;
+    font-family: arial;
+    border-color: #9400D3;
+}
+
+.user {
+    position: relative;
+    bottom: 28px;
+    right: 21px;
+
+}
+
+.bandeira {
+    position: relative;
+    right: 22px;
+    bottom: 147px;
+
+}
+
+.subJect {
+    position: relative;
+    bottom: 24px;
+    right: 25px;
+
+}
+
+.testeSpan1 {
+    color: red;
+    position: relative;
+    bottom: 55px;
+    left: 5px;
+
+}
+
+.testeSpan2 {
+    color: red;
+    position: relative;
+    bottom: 50px;
+    left: 5px;
+
+
+}
+
+.testeSpan3 {
+    color: red;
+    position: relative;
+    bottom: 155px;
+    right: 382px;
+
+}
+
+::placeholder {
+    position: relative;
+    left: 50px;
+}
+
+@media screen and (max-width:769px) {
+
+    .container {
+        margin-top: 209px;
+        margin-right: 234px;
+
+    }
+
+    h2 {
+        font-size: 51px;
+        left: 28px;
+        bottom: 241px;
+
+    }
+
+    .formularios {
+        left: 44px;
+        bottom: 203px;
+    }
+
+    #nome {
+        width: 317px;
+    }
+
+    #texto {
+        width: 317px;
+    }
+
+    #mensagem {
+        width: 336px;
+    }
+
+    textarea {
+        width: 319px;
+        height: 161px;
+    }
+
+    .texto {
+        left: 39px;
+        font-size: 12px;
+        bottom: 232px;
+    }
+
+    #botao {
+        left: 94px;
+    }
+
+    .container-2 {
+        display: block;
+
+    }
+
+    .teste1 {
+        width: 315px;
+        height: 40px;
+    }
+
+
+    .teste2 {
+        width: 315px;
+        height: 40px;
+    }
+
+    .testeSpan3 {
+        left: 8px;
+        bottom: 184px;
+
+    }
+    .bandeira{
+        right: 24px;
+        bottom: 182px;
+    }
+
+
+}
