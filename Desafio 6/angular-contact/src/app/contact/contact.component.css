@@ -1,234 +1,214 @@
-.container {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 116px;
-    position: relative;
-    left: 196px;
-}
-
-h2 {
-    color: #9400D3;
-    font-family: 'Varela Round', sans-serif;
-    position: relative;
-    font-size: 93px;
-    right: 210px;
-    bottom: 162px;
-}
-
-.teste1 {
-    border-radius: 12px 12px 12px 12px;
-    width: 386px;
-    height: 33px;
-    font-size: 19px;
-    font-family: arial;
-    color: inherit;
-    border-style: hidden;
-    outline: none;
-}
-
-.teste2 {
-    outline: none;
-    border-radius: 12px 12px 12px 12px;
-    width: 386px;
-    height: 33px;
-    font-size: 19px;
-    font-family: arial;
-    color: inherit;
-    border-style: hidden;
-    outline: none;
-}
-
-
-.formularios {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    right: 17px;
-    bottom: 130px;
-}
-
-.texto {
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    right: 44px;
-    line-height: 29.5px;
-    bottom: 170px;
-}
-
-
-#nome {
-    outline: none;
-    border-radius: 10px;
-    box-shadow: 10px 5px 5px #c0c0c0;
-    width: 393px;
-    height: 40px;
-    border-style: hidden;
-}
-
-#texto {
-    position: relative;
-    top: 4px;
-    outline: none;
-    border-radius: 10px;
-    box-shadow: 10px 5px 5px #c0c0c0;
-    width: 393px;
-    height: 40px;
-    border-style: hidden;
-}
-
-#mensagem {
-    position: relative;
-    top: 17px;
-}
-
-textarea {
-    overflow: hidden;
-    outline: none;
-    resize: none;
-    border-radius: 10px;
-    box-shadow: 10px 5px 5px #c0c0c0;
-    border-style: hidden;
-
-}
-
-#botao {
-    position: relative;
-    top: 50px;
-    left: 120px;
-}
-
-.chat {
-    border-radius: 12px 12px 12px 12px;
-    width: 147px;
-    height: 33px;
-    font-size: 19px;
-    font-family: arial;
-    border-color: #9400D3;
-}
-
-.user {
-    position: relative;
-    bottom: 28px;
-    right: 21px;
-
-}
-
-.bandeira {
-    position: relative;
-    right: 22px;
-    bottom: 147px;
-
-}
-
-.subJect {
-    position: relative;
-    bottom: 24px;
-    right: 25px;
-
-}
-
-.testeSpan1 {
-    color: red;
-    position: relative;
-    bottom: 55px;
-    left: 5px;
-
-}
-
-.testeSpan2 {
-    color: red;
-    position: relative;
-    bottom: 50px;
-    left: 5px;
-
-
-}
-
-.testeSpan3 {
-    color: red;
-    position: relative;
-    bottom: 155px;
-    right: 382px;
-
-}
-
-::placeholder {
-    position: relative;
-    left: 50px;
-}
-
-@media screen and (max-width:769px) {
-
+@media screen and (max-width:2560px) {
     .container {
-        margin-top: 209px;
-        margin-right: 234px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 90vh
+    }
 
+    aside {
+        grid-column-end: 6;
     }
 
     h2 {
-        font-size: 51px;
-        left: 28px;
-        bottom: 241px;
-
-    }
-
-    .formularios {
-        left: 44px;
-        bottom: 203px;
-    }
-
-    #nome {
-        width: 317px;
-    }
-
-    #texto {
-        width: 317px;
-    }
-
-    #mensagem {
-        width: 336px;
-    }
-
-    textarea {
-        width: 319px;
-        height: 161px;
+        color: #9400D3;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 87px;
+        position: relative;
+        right: 5%;
     }
 
     .texto {
-        left: 39px;
-        font-size: 12px;
-        bottom: 232px;
+        line-height: 29.5px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        left: 108px;
+        bottom: 11px;
     }
 
-    #botao {
-        left: 94px;
+    .formularios {
+        margin-left: 115px;
+        margin-bottom: 24px;
     }
 
-    .container-2 {
-        display: block;
+    .chat {
+        border-radius: 12px 12px 12px 12px;
+        width: 147px;
+        height: 33px;
+        font-size: 19px;
+        font-family: arial;
+        border-color: #9400D3;
+        margin-left: 143px;
+    }
 
+    #nome {
+        outline: none;
+        border-radius: 10px;
+        box-shadow: 10px 5px 5px #c0c0c0;
+        width: 393px;
+        height: 40px;
+        border-style: hidden;
+    }
+
+    #texto {
+        outline: none;
+        border-radius: 10px;
+        box-shadow: 10px 5px 5px #c0c0c0;
+        width: 393px;
+        height: 40px;
+        border-style: hidden;
+    }
+
+    textarea {
+        overflow: hidden;
+        outline: none;
+        resize: none;
+        border-radius: 10px;
+        box-shadow: 10px 5px 5px #c0c0c0;
+        border-style: hidden;
     }
 
     .teste1 {
-        width: 315px;
-        height: 40px;
+        border-radius: 12px 12px 12px 12px;
+        width: 386px;
+        height: 33px;
+        font-size: 19px;
+        font-family: arial;
+        color: inherit;
+        border-style: hidden;
+        outline: none;
     }
-
 
     .teste2 {
-        width: 315px;
-        height: 40px;
+        outline: none;
+        border-radius: 12px 12px 12px 12px;
+        width: 386px;
+        height: 33px;
+        font-size: 19px;
+        font-family: arial;
+        color: inherit;
+        border-style: hidden;
+        outline: none;
     }
 
-    .testeSpan3 {
-        left: 8px;
-        bottom: 184px;
+    .user {
+        position: relative;
+        bottom: 28px;
+        right: 21px;
+    }
+
+    .bandeira {
+        position: relative;
+        right: 22px;
+        bottom: 147px;
+    }
+
+    .subject {
+        position: relative;
+        bottom: 24px;
+        right: 25px;
+    }
+
+    .testeSpan1 {
+        color: red;
+        position: relative;
+        bottom: 47px;
+    }
+
+    .testeSpan2 {
+        color: red;
+        position: relative;
+        bottom: 49px;
+    }
+
+  .testeSpan3 {
+        color: red;
+        position: relative;
+        bottom:  170px;
+        display: flex;
+    } 
+
+    textarea {
+        width: 390px;
+    }
+
+
+    ::placeholder {
+        position: relative;
+        left: 50px;
+    }
+
+}
+
+/* ----------------------------------------------------VERSÃO MOBILE----------------------------------------------*/
+
+@media screen and (max-width:426px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 5fr 6fr;
+        grid-template-rows: 80vh
+    }
+
+
+    h2 {
+        font-size: 52px;
+        right: -11%;
+        margin-top: 3%;
+        margin-left: 18px;
+    }
+
+    aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .formularios {
+        margin-left: 76px;
+        position: relative;
+        top: 21px;
 
     }
+
+    .texto {
+        left: 61px;
+        font-size: 13px;
+    }
+
+    .chat{
+        right: 10px;
+        margin-left: 73px;
+    }
+    #nome{
+        width: 320px;
+    }
+
+    #texto{
+        width: 320px;
+    }
+
+    textarea{
+        width: 320px;
+    }
+
+    .teste1{
+        width: 314px;
+
+    }
+
+    .teste2{
+        width: 314px;
+    }
+
+    .user{
+        right: 19px;
+    }
+    
+    .subject{
+        right: 20px;
+    }
+
     .bandeira{
-        right: 24px;
-        bottom: 182px;
+        right: 20px;
+        bottom: 148px;
     }
-
 
 }

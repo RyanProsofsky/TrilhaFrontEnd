@@ -12,15 +12,16 @@ export class HeaderComponent implements OnInit {
 
   tamanhoDaTela: Number | undefined
   toggle: boolean = false;
+  innerWidth: any;
 
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.innerWidth = window.innerWidth;
   }
 
-  public innerWidth: any;
+ 
   ngOnInit() {
-    this.innerWidth = window.innerWidth;
+
   }
 
 }

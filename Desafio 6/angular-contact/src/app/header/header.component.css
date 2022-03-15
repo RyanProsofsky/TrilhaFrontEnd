@@ -1,99 +1,103 @@
-.logoTipo {
-    width: 150px;
-}
-
-.menu-hamburguer {
-    display: none;
-
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-bar {
-    display: flex;
-    position: relative;
-    justify-content: flex-end;
-    bottom: 73px;
-    left: 33px;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    font-size: 21px;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    right: 134px;
-  
-}
-
-.item-menu {
-    margin-right: 135px;
-    text-decoration: none;
-    color: black;
-}
-
-.sign {
-    position: relative;
-    right: -596px;
-    border-radius: 12px 12px 12px 12px;
-    width: 133px;
-    height: 28px;
-    font-size: 19px;
-    font-family: arial;
-    border-color: #9400D3;
-    bottom: 26px;
-
-}
-
-/* VERSÃO MOBILE */
-
-@media screen and (max-width:769px) {
     .logoTipo {
-        width: 100px;
+        width: 170px;
     }
 
-    header {
-        display: flex;
-        justify-content: space-between;
+    .container3 {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 10vh;
     }
-    
+
+    nav {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .container2 {
+        float: right;
+        position: relative;
+        bottom: 88px;
+    }
+
     .menu {
-        flex-direction: column;
-        margin-top: 31px;
+        list-style: none;
+        font-size: 21px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
         position: relative;
-        left: -4px;
+        right: 154px;
+        flex-direction: row;
     }
 
-    .nav-bar {
-        position: relative;
-        justify-content: flex-end;
-        bottom: 4px;
-        margin-right: -105px;
+    .itemMenu {
+        text-decoration: none;
+        color: black;
+        margin-right: 90px;
     }
 
     .sign {
-        margin-right: 100px;
         position: relative;
-        bottom: 125px;
-        right: 40px;
+        left: 28rem;
+        bottom: 1.45rem;
+        border-radius: 12px 12px 12px 12px;
+        width: 133px;
+        height: 28px;
+        font-size: 19px;
+        font-family: arial;
+        border-color: #9400D3;
     }
 
     .menu-hamburguer {
+        display: none;
+
+    }
+
+
+/* --------------------------------------------- VERSÃO MOBILE ------------------------------------------------------------------------- */
+@media screen and (max-width:426px) {
+    .logoTipo {
+        width: 8rem;
+        position: relative;
+        left: 2rem;
+    }
+
+    .menu-hamburguer{
         display: block;
-        margin-right: 15px;
+        float: right;
+        position: relative;
+        bottom: 68px;
+        right: 14px;
         font-size: 32px;
         color: #9400D3;
     }
 
-    main {
-        display: block;
-        margin-right: 233px;
+    .menu{
+        flex-direction: column;
     }
+    
+
+    .container3{
+        grid-template-columns: 0fr 1fr 0fr;
+        grid-template-rows: 10vh 20vh;
+    }
+
+    .container2{
+        left: 238px;
+        top: 1px;
+    }
+
+    .sign{
+        left: -12rem;
+        bottom: 122px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+    
+
+ 
+
 
 
 

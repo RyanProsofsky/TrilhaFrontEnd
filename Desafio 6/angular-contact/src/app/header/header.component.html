@@ -1,20 +1,23 @@
 <header>
-    <figure>
-        <img class="logoTipo" src="../assets/imagens/MicrosoftTeams-image.png" alt="Logo SóVamu">
-    </figure>
+    <div class="container3">
+        <nav>
+            <figure>
+                <img class="logoTipo" src="../assets/imagens/MicrosoftTeams-image.png" alt="Logo SóVamu">
+            </figure>
 
-    <figure class="menu-hamburguer" (click)="toggle=!toggle" >    
-        <i class="fas fa-bars" ></i>
-    </figure>
-</header>
+            <figure class="menu-hamburguer" (click)="toggle=!toggle">
+                <i class="fas fa-bars"></i>
+            </figure>
 
-<nav class="nav-bar">
-    <div class="container-2">
-        <ul class="menu" *ngIf="toggle || innerWidth > 770 " >
-            <li><a class="item-menu" href="#">Home</a></li>
-            <li><a class="item-menu" href="#">Profile</a></li>
-            <li><a class="item-menu" href="#">About</a></li>
-            <li><a class="item-menu" href="#">Contact</a></li>
-        </ul>
-        <button class="sign" type="submit">Sign in </button>
+            <div class="container2" *ngIf="toggle || innerWidth > 769 ">
+                <ul class="menu" >
+                    <li><a class="itemMenu" href="#">Home</a></li>
+                    <li><a class="itemMenu" href="#">Profile</a></li>
+                    <li><a class="itemMenu" href="#">About</a></li>
+                    <li><a class="itemMenu" href="#">Contact</a></li>
+                </ul>
+                <button class="sign" type="submit">Sign in </button>
+            </div>
+        </nav>
     </div>
+</header>
