@@ -1,0 +1,23 @@
+<header>
+    <div class="container3">
+        <nav>
+            <figure>
+                <img class="logoTipo" src="../assets/imagens/MicrosoftTeams-image.png" alt="Logo SóVamu">
+            </figure>
+
+            <figure class="menu-hamburguer" (click)="toggle=!toggle">
+                <i class="fas fa-bars"></i>
+            </figure>
+
+            <div class="container2">
+                <div class="menu" *ngIf="toggle || innerWidth > 769">
+                    <button mat-raised-button color="primary">Home</button>
+                    <button mat-raised-button color="primary">Profile</button>
+                    <button mat-raised-button color="primary">About</button>
+                    <button mat-raised-button color="primary">Contact</button>
+                    <button mat-raised-button color="primary">Sign in</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
