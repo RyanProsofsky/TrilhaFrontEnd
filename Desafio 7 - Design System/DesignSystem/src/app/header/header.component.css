@@ -62,13 +62,25 @@ button {
         bottom: 65%;
         font-size: 2rem;
         color: #3f51b5;
-        
+
     }
 
     .menu {
+        display: flex;
         flex-direction: column;
     }
 
+    .mat-raised-button{
+        margin-top: 12px;
+    }
+
+    .container2{
+        left: 73px;
+        background-color: #fff;
+    }
+
    
+
+
 
 }

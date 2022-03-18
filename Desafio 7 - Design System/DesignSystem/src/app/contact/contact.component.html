@@ -1,7 +1,6 @@
 <main>
     <div class="container">
         <aside>
-            <div class="container4">
                 <h2>CONTACT US</h2>
                 <div class="texto">
                     <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
@@ -13,47 +12,49 @@
                     <mat-form-field class="example-full-width" appearance="fill">
                         <mat-label>Your Name</mat-label>
                         <input matInput placeholder="" formControlName="nome">
-                        <span class="testeSpan1"
+                        <span class="span1"
                             *ngIf="formulario.get('nome')?.errors?.['required'] && formulario.get('nome')?.touched">
                             Campo Obrigatório
                         </span>
                     </mat-form-field>
-                    <!-- <figure class="user">
-                        <i class="far fa-user"></i>
-                    </figure> -->
 
                     <mat-form-field class="example-full-width" appearance="fill">
                         <mat-label>Your Subject</mat-label>
                         <input matInput placeholder="" formControlName="mensagem">
-                        <span class="testeSpan1"
+                        <span class="span2"
                             *ngIf="formulario.get('mensagem')?.errors?.['required'] && formulario.get('mensagem')?.touched">
                             Campo Obrigatório
                         </span>
                     </mat-form-field>
-                    <!-- <figure class="subject">
-                        <i class="fas fa-inbox"></i>
-                    </figure> -->
-                    
 
                     <mat-form-field class="example-full-width" appearance="fill">
                         <mat-label>Your Message</mat-label>
                         <textarea matInput placeholder="" formControlName="texto"></textarea>
-                        <span class="testeSpan1"
+                        <span class="span3"
                             *ngIf="formulario.get('texto')?.errors?.['required'] && formulario.get('texto')?.touched">
                             Campo Obrigatório
                         </span>
                     </mat-form-field>
-                    <!-- <figure class="bandeira">
-                        <i class="far fa-flag"></i>
-                    </figure> -->
-
 
                     <div id="botao">
                         <button mat-raised-button disabled [disabled]="!formulario.valid" (click)="postar()">START
                             CHAT</button>
                     </div>
                 </form>
-            </div>
+
+                <!-- <div class="figuras">
+                    <figure class="user">
+                        <i class="far fa-user"></i>
+                    </figure>
+
+                    <figure class="subject">
+                        <i class="fas fa-inbox"></i>
+                    </figure>
+
+                    <figure class="bandeira">
+                        <i class="far fa-flag"></i>
+                    </figure>
+                </div> -->
         </aside>
     </div>
 </main>
